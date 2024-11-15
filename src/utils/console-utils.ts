@@ -1,4 +1,4 @@
-import { wcswidth } from 'simple-wcswidth';
+import { wcswidth } from 'display-width';
 import { CharLengthDict } from '../models/common';
 
 /* eslint-disable no-control-regex */

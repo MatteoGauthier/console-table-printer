@@ -25,4 +25,11 @@ describe('Example: Print a simple Table with Custom char len', () => {
     p.printTable();
     expect(p.render()).toMatchSnapshot();
   });
+
+  it('char length correct with emoji', () => {
+    const p = new Table();
+    p.addRows([{ Check: '✅', Cross: '❌' }]);
+    p.printTable();
+    expect(p.render()).toMatchSnapshot();
+  });
 });
